@@ -1,0 +1,38 @@
+body {
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+}
+
+.input {
+  width: 300px;
+  height: 30px;
+}
+
+.active {
+  color: black;
+  cursor: pointer;
+}
+
+.submit {
+  color: blue;
+  text-transform: uppercase;
+  padding:10px;
+  border: none;
+}
+
+.done {
+  color: rgb(103, 224, 103);
+  text-align: center;
+}
+
+.btn {
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 7%;
+  text-transform: uppercase;
+}
+
+.buttons{
+  padding-bottom: 20px;
+}

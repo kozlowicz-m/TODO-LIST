@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToDoList /> renders button - active 1`] = `ShallowWrapper {}`;
+
+exports[`<ToDoList /> renders button - all 1`] = `ShallowWrapper {}`;
+
+exports[`<ToDoList /> renders button - done 1`] = `ShallowWrapper {}`;
+
+exports[`<ToDoList /> renders correctly 1`] = `ShallowWrapper {}`;
