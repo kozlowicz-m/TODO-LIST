@@ -2,7 +2,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require("path");
 
 module.exports = {
-    entry: "./index.tsx",
+    entry: "./src/index.tsx",
     output: {
         filename: "bundle.min.js",
         path: path.resolve(__dirname, "dist")
@@ -18,7 +18,13 @@ module.exports = {
     module: {
         rules: [
             // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-            { test: /\.tsx?$/, loader: "ts-loader" }
+            { test: /\.tsx?$/, loader: "ts-loader" },
+            {test: /\.js$/ , loader:'babel-loader', exclude: '/node_modules/'},
+            {test: /\.jsx$/ , loader:'babel-loader', exclude: '/node_modules/'},
+            {test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
         ]
+    },
+    devServer: {
+        contentBase: './dist',
     }
 }

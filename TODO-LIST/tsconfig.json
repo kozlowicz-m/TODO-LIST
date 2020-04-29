@@ -1,56 +1,27 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "module": "esnext",
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "baseUrl": "./src",
     "target": "es5",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "declaration": false,
+    "keyofStringsOnly": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "strict": true,
+    "jsx": "react"
   },
-  "allowJs": true,
-  "skipLibCheck": true,
-  "skipPreflightCheck": true,
-  "esModuleInterop": true,
-  "allowSyntheticDefaultImports": true,
-  "strict": true,
-  "forceConsistentCasingInFileNames": true,
-  "noImplicitAny": false,
-  "module": "esnext",
-  "moduleResolution": "node",
-  "resolveJsonModule": true,
-  "isolatedModules": true,
-  "noEmit": true,
-  "jsx": "react",
-  "baseUrl": "./src",
-  "target": "es6",
-  "lib": [
-    "es2015",
-    "dom"
-  ],
-  "declaration": false,
-  "keyofStringsOnly": true,
-  "outDir": "./dist",
-  "rootDir": ".",
-  "sourceMap": true,
   "include": [
-    "dist"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts"
+    "**/*.test.ts*"
   ]
 }
